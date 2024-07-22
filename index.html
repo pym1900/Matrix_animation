@@ -1,9 +1,23 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Matrix</title>
-    </head>
-    <body style="margin: 0">
-        <canvas width="800" height="800" id="canvas"></canvas>
-        <script src="./matrix.js"></script>
-    </body>
+<head>
+    <title>Matrix</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* To prevent scrollbars */
+        }
+        #canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure it is on top */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="./matrix.js"></script>
+</body>
 </html>
